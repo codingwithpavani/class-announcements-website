@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Announcements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Class Announcements</h1>
+    </header>
+    <a href="login3.html">Admin Login</a>
+
+    <main>
+        <section id="announcements">
+            <h2>Recent Announcements</h2>
+            <ul id="announcement-list"></ul>
+        </section>
+        <!--<section id="announcement-form">
+            <h2>Post a New Announcement</h2>
+            <input type="text" id="announcement-input" placeholder="Enter your announcement">
+            <input type="url" id="link-input" placeholder="Enter a link (optional)">
+            <input type="file" id="image-input" accept="image/*">
+            
+            <button onclick="postAnnouncement()">Post</button>
+        </section>-->
+        <section id="announcements">
+            <h2>Post a New Announcement</h2>
+            <input type="text" id="announcement-input" placeholder="Write an announcement">
+            <input type="url" id="link-input" placeholder="Add a link (optional)">
+            <input type="file" id="image-input" accept="image/*">
+            <input type="checkbox" id="pin-checkbox"> 📌Pin this announcement
+            <button onclick="postAnnouncement()">Post</button>
+            <ul id="announcement-list"></ul>
+        </section>
+        <section id="class-calendar">
+            <h2>📅 Class Calendar</h2>
+          
+            <iframe src="https://calendar.google.com/calendar/embed?src=abothulapavani16%40gmail.com&ctz=UTC" style="border: 0" width="500" height="200" frameborder="0" scrolling="no"></iframe>
+            </iframe>
+        </section>
+        <section id="study-resources">
+            <h2>📚 Study Resources</h2>
+            <input type="text" id="resource-title" placeholder="Resource Title">
+            <input type="url" id="resource-link" placeholder="Resource Link">
+            <button onclick="addResource()">Add Resource</button>
+            <ul id="resource-list"></ul>
+        </section>
+        <section id="polls">
+            <h2>🗳️ Class Polls</h2>
+            <input type="text" id="poll-question" placeholder="Enter poll question">
+            <button onclick="createPoll()">Create Poll</button>
+            <div id="poll-container"></div>
+        </section>
+        <!--<section id="admin-login">
+            <h2>🔑 Admin Login</h2>
+            <input type="password" id="admin-password" placeholder="Enter Admin Password">
+            <button onclick="loginAsAdmin()">Login</button>
+        </section>
+        <h2>🔑 Admin Login</h2>-->
+    
+    
+        
+        
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

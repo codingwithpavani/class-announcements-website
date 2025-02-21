@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #admin-panel { display: none; margin-top: 20px; }
+        #login-container { padding: 20px; border: 1px solid #ccc; display: inline-block; }
+        input { margin: 5px; padding: 8px; width: 200px; }
+        button { padding: 8px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>🔑 Admin Login</h2>
+
+    <div id="login-container">
+        <input type="text" id="admin-username" placeholder="Enter Username"><br>
+        <input type="password" id="admin-password" placeholder="Enter Password"><br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="admin-panel">
+        <h3>Welcome, Admin!</h3>
+        <p>You have access to manage announcements.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+    
+
+    <script src="logscript.js"></script>
+
+</body>
+</html>
